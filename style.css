@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #29303b;
+    color: aliceblue;
+}
+
+.wrapper{
+    padding: 50px;
+    width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #1C232D;
+}
+
+.wrapper h1{
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.wrapper p{
+    margin-bottom: 1em;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-right, .section-left{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+
+.container input, .container select{
+    color: aliceblue;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+.container input {
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 2.2rem;
+    background: ghostwhite;
+    color: #333;
+    border-radius: 5px;
+ 
+}
+.container select{
+    margin-top: 1em;
+    /* padding: 1em 2em; */
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.container input:focus, .container select:focus{
+    outline: none;
+    color: crimson;
+}
+
+.container option {
+    color: #333;
+}
+
+.swap {
+    align-self: flex-end;
+    margin: 1em;
+    padding: 5px 50px;
+    background-image: linear-gradient(45deg, #2b89e7, #11e763);
+    font-size: 30px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.swap:focus {
+    outline: none;
+    background-image: linear-gradient(45deg, #317fcc, #1fc06a);
+}
+
+.wrapper .rate-info {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
